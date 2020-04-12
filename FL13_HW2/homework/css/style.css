@@ -89,7 +89,7 @@ section::before{
 .blocks p{
    font-style: italic;
    text-indent: 1.5em;
-   line-height: 25px;
+   line-height: 24px;
 }
 .box-work{
    padding: 10px;
