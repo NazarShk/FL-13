@@ -1,0 +1,247 @@
+@mixin word-highlighting ($bottom, $width) {
+  content: '';
+  position: absolute;
+  bottom: $bottom;
+  width: $width;
+  height: 50px;
+  background-color: $word-highlighting;
+  z-index: -1;
+}
+@mixin button {
+  padding: 13px 41px;
+  background-color: $button-background-color;
+  border-radius: 2px;
+  border: none;
+  color: $button-link-color;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+}
+@mixin link {
+  color: $button-link-color;
+  font-weight: 400;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body, h1, h2, h3, h4, p, ul[class], ol[class], li, figure, figcaption,
+blockquote, dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: $body-color;
+  background-color: $body-background;
+  font-family: $main-body-font;
+}
+header, main, footer {
+  max-width: 1940px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header {
+  margin: 0 auto;
+  background: $header-background;
+  border-bottom-right-radius: 740px 265px;
+  &-wrap {
+      max-width: 1534px;
+      margin: 0 auto;
+      padding: 22px 0 175px;
+      div:nth-child(4) {
+          padding-top: 60px;
+      }
+  }
+  &_button {
+      @include button;
+  }
+  &_heading {
+      width: 655px;
+      font-size: 72px;
+      line-height: 70px;
+      font-weight: 700;
+      padding-top: 75px;
+      position: relative;
+      z-index: 3;
+      &::before {
+          @include word-highlighting(0, 300px);
+          left: 0;
+      }
+  }
+  &_text {
+      padding-top: 40px;
+      font-family: $content-font;
+      width: 655px;
+      font-size: 16px;
+      word-spacing: 1px;
+      line-height: 24px;
+      white-space: pre-line;
+  }
+}
+.landing-logo {
+  display: flex;
+  p {
+      margin-left: 15px;
+      font-size: 24px;
+      line-height: 22px;
+      padding-top: 2px;
+      font-weight: 600;
+      span {
+          display: block;
+          font-size: 10px;
+          text-align: center;
+      }
+  }
+}
+.login {
+  @include link;
+  margin-left: 150px;
+  font-size: 20px;
+}
+.section {
+  max-width: 1198px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+}
+.section_text {
+  position: relative;
+  padding: 36px 0 35px;
+  font-size: 43px;
+  font-weight: 600;
+  word-spacing: 1px;
+  &::before {
+      @include word-highlighting(45px, 190px);
+      right: 3%;
+  }
+}
+.section_card {
+  display: flex;
+  background-color: $content-background;
+  color: #fff;
+  padding: 20px;
+  border-radius: $section-radius;
+  & + & {
+      margin-top: 25px;
+  }
+  &_wrap {
+      max-width: 1116px;
+      margin: 0 auto;
+  }
+  &_img {
+      width: 125%;
+      border-radius: $section-radius;
+  }
+  &_right_container {
+      padding: 0 90px;
+      justify-content: center;
+      text-align: center;
+      height: 60%;
+  }
+  &_heading {
+      font-size: 24px;
+      font-weight: 600;
+      padding-top: 0;
+  }
+  &_text {
+      color: $content-text-color;
+      text-align: justify;
+      font-size: 16px;
+      font-family: $content-font;
+      line-height: 1.5em;
+  }
+  &_wrap {
+      & > div:nth-child(1) {
+          .section_card_heading {
+              margin-top: 50px;
+          }
+          .section_card_text {
+              margin-top: 40px;
+              margin-bottom: 20px;
+          }
+      }
+      & > div:nth-child(2) {
+          .section_card_heading {
+              margin-top: 47px;
+          }
+          .section_card_text {
+              margin-top: 34px;
+              margin-bottom: 17px;
+          }
+      }
+      & > div:nth-child(3) {
+          .section_card_heading {
+              margin-top: 57px;
+          }
+          .section_card_text {
+              margin-top: 62px;
+              margin-bottom: 30px;
+          }
+      }
+  }
+  a {
+      @include link;
+  }
+}
+.section_banner {
+  position: relative;
+  z-index: 20;
+  top: 75px;
+  padding: 40px 160px 50px 165px;
+  background: linear-gradient(to left, $right-color-gradient, $left-color-gradient);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: $section-radius;
+  word-spacing: 1px;
+  margin-top: 60px;
+  &_heading {
+      font-size: 30px;
+      font-weight: 700;
+      word-spacing: 1px;
+      line-height: 0.5em;
+      position: relative;
+      &::before {
+          @include word-highlighting(-10px, 67px);
+          left: 29%;
+      }
+  }
+  &_text {
+      margin-top: 22px;
+      color: $content-text-color;
+  }
+  &_button {
+      @include button;
+  }
+}
+.footer {
+  position: relative;
+  z-index: 19;
+  background-color: $content-background;
+  color: $content-text-color;
+  word-spacing: 1px;
+  &-wrap {
+      margin: 0 auto;
+      max-width: 1534px;
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      padding: 135px 0 60px; 
+  }
+  &_logo {
+      align-self: center;
+  }
+  &_text {
+      @extend .footer_logo;
+      font-size: 14px;
+      width: 290px;
+      word-spacing: 1px;
+  }
+  &-cr {
+      @extend .footer_logo;
+  }
+}
