@@ -1,0 +1,16 @@
+$font: ( main: 'Source Sans Pro', light-content: 'Hind', dark-content: 'Fresca');
+$main-body-font: map-get($font, main), sans-serif;
+$content-font: map-get($font, dark-content), sans-serif;
+
+$body-background: #21232e;
+$content-background: #3b3f50;
+$body-color: #fff;
+$content-text-color: #d1d1d1;
+$button-background-color: #e3ac00;
+$button-link-color: #fff;
+$word-highlighting: #ff4e33;
+$right-color-gradient: #953050;
+$left-color-gradient: #dfa604;
+
+$header-background: #142127 url("../img/m-h-night.jpg") center/cover;
+$section-radius: 5px;
