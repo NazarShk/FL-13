@@ -1,32 +1,3 @@
-/* 
- * Feel free to change name of colors if you need it
- * Feel free to add new colors if you need it
- 
-
-:root {
-  --bg-color--dark: #0b192f;
-  --bg-color--medium: #162b4d;
-  --text--color: #484848;
-  --link: #fff;
-  --link--hover: #b8b8b8;
-}
-
-body {
-  font-family: roboto;
-}
-
-.post-1 {
-	background: #F3D250;
-}
-.post-2 {
-	background: #8D8741;
-}
-.post-3 {
-	background: #659DBD;
-}
-.post-4 {
-	background: #DAAD86;
-} */
 
 html, body, header, main, footer, div, section, p, h2, a, aside, nav {
   padding: 0;
@@ -247,7 +218,6 @@ header .nav_items a:hover {
  border:none; 
  } 
 
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -262,8 +232,6 @@ footer p {
   opacity: 0.3;
   font-size: 15px;
 }
-
-
 
 @media (max-width: 1400px){
 
