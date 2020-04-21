@@ -5,138 +5,189 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext' rel='stylesheet'
     type='text/css'>
   <title>Responsive</title>
 </head>
 
 <body>
-
-  <header>
-    <div id="mango">&#9776;</div>
-
-    <div class="h-logo">
-      <p>Travel<span>Blog</span></p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Archive</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <article class="post-1">
-      <div class="img-artic"></div>
-      <div class="content-art">
-        <h3 class="title-art">My amazing travel blog</h3>
-        <p class="text-art">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
-          consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
-          tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
-          nesciunt.
-        </p>
+  <div class="wrapper">
+    <header>
+      <div class="logo">Travel<span>Blog</span></div>
+      <!-- <nav class="navigation"> -->
+      <div id="menuToggle">
+        <input type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu" class="nav_items">
+          <li><a href="">Blog</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Archive</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
       </div>
-      <p class="date-art"><span>07</span><br> mar</p>
-    </article>
+      <!-- </nav> -->
+    </header>
 
-    <article class="post-2">
-      <div class="img-artic"></div>
-      <div class="content-art">
-        <h3 class="title-art">Top 10 travel tips</h3>
-        <p class="text-art">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
-          consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
-          tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
-          nesciunt.
-        </p>
+    <main>
+      <div class="content_wrap">
+        <div class="post_wrapper">
+          <div class="post_element">
+            <div class="post_img">
+              <img src="img/post1.jpg" alt="post">
+            </div>
+            <div class="post_desc">
+              <div class="post_title">
+                My amazing travel blog
+              </div>
+              <div class="post_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
+                consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
+                tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
+                nesciunt.
+              </div>
+              <div class="data">
+                <p class="number">07</p>
+                <p class="month">mar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post_element">
+            <div class="post_img">
+              <img src="img/post2.jpg" alt="post">
+            </div>
+            <div class="post_desc">
+              <div class="post_title">
+                Top 10 travel tips
+              </div>
+              <div class="post_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
+                consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
+                tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
+                nesciunt.
+              </div>
+              <div class="data">
+                <p class="number">06</p>
+                <p class="month">mar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post_element">
+            <div class="post_img">
+              <img src="img/post3.jpg" alt="post">
+            </div>
+            <div class="post_desc">
+              <div class="post_title">
+                Nice minimalist travel
+              </div>
+              <div class="post_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
+                consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
+                tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
+                nesciunt.
+              </div>
+              <div class="data">
+                <p class="number">04</p>
+                <p class="month">mar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post_element">
+            <div class="post_img">
+              <img src="img/post4.jpg" alt="post">
+            </div>
+            <div class="post_desc">
+              <div class="post_title">
+                With amazing regions
+              </div>
+              <div class="post_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
+                consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
+                tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
+                nesciunt.
+              </div>
+              <div class="data">
+                <p class="number">01</p>
+                <p class="month">mar</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="post_element">
+            <div class="post_desc post_desc_bottom">
+              <div class="post_title">
+                And again - it's totally amazing
+              </div>
+              <div class="post_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
+                consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
+                tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
+                nesciunt.
+              </div>
+              <div class="data">
+                <p class="number">27</p>
+                <p class="month">feb</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="news_wrapper">
+          <div class="news_block">
+            <div class="news_img">
+              <img src="img/news1.jpg" alt="news">
+            </div>
+            <div class="news_desc">
+              <div class="news_title">
+                Breaking news
+              </div>
+              <div class="news_text">
+                Lorem ipsum dolor sit ametconsectetur adipisicing elit. Iusto eius
+                explicabo perferendis maxime,ad enim, asperiores modi inventore eligendi
+                dignissimos consequatur dolores placeat, nisi omnis quas. Non totam in impedit?
+              </div>
+              <a class="btn" href="#some_text">LEARN MORE..</a>
+            </div>
+          </div>
+
+          <div class="news_block">
+            <div class="news_img">
+              <img src="img/news2.jpg" alt="news">
+            </div>
+            <div class="news_desc">
+              <div class="news_title">
+                Second news on the Travel blog
+              </div>
+              <div class="news_text">
+                Lorem ipsum dolor sit ametconsectetur adipisicing elit. Iusto eius
+                explicabo perferendis maxime,ad enim, asperiores modi inventore eligendi
+                dignissimos consequatur dolores placeat, nisi omnis quas. Non totam in impedit?
+              </div>
+              <a class="btn" href="#some_text">LEARN MORE..</a>
+            </div>
+          </div>
+        </aside>
       </div>
-      <p class="date-art"><span>06</span><br> mar</p>
-    </article>
+    </main>
 
-    <article class="post-3">
-      <div class="img-artic"></div>
-      <div class="content-art">
-        <h2 class="title-art">Nice minimalist travel</h2>
-        <p class="text-art">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
-          consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
-          tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
-          nesciunt.
-        </p>
+    <footer>
+      <div class="copyR">
+        <p>Copyright 2020, Epam systems</p>
+        <p>Lorem ipsum dolor sit amet
+          consectetur adipisicing elit.
+          Facere reiciendis.</p>
       </div>
-      <p class="date-art"><span>04</span><br> mar</p>
-    </article>
-
-    <article class="post-4">
-      <div class="img-artic"></div>
-      <div class="content-art">
-        <h2 class="title-art">With amazing regions</h2>
-        <p class="text-art">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
-          consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
-          tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
-          nesciunt.
-        </p>
+      <div class="design">
+        <p>Design and coding</p>
+        <p>by Nazar Shynkarenko</p>
       </div>
-      <p class="date-art"><span>01</span><br> mar</p>
-    </article>
-
-    <article class="post-5">
-      <div class="img-artic"></div>
-      <div class="content-art">
-        <h2 class="title-art">And again - it's totally amazing</h2>
-        <p class="text-art">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla aperiam,
-          consequatur culpa nisi asperiores consequuntur explicabo nam, voluptatibus
-          tempore non placeat tempora delectus deleniti, alias sed voluptates dolores
-          nesciunt.
-        </p>
-      </div>
-    </article>
-  </main>
-
-  <aside>
-    <article>
-      <img src="img/news1.jpg" alt="news-image">
-      <div class="content-art">
-        <h2 class="title-art">Breaking news</h2>
-        <p class="text-art">
-          Lorem ipsum dolor sit ametconsectetur adipisicing elit. Iusto eius
-          explicabo perferendis maxime,ad enim, asperiores modi inventore eligendi
-          dignissimos consequatur dolores placeat, nisi omnis quas. Non totam in impedit?
-        </p>
-        <a class="btn" href="#some_text">LEARN MORE..</a>
-      </div>
-    </article>
-
-    <article>
-      <img src="img/news2.jpg" alt="news-image">
-      <div class="content-art">
-        <h2 class="title-art">Second news on the Travel blog</h2>
-        <p class="text-art">
-          Lorem ipsum dolor sit ametconsectetur adipisicing elit. Iusto eius
-          explicabo perferendis maxime,ad enim, asperiores modi inventore eligendi
-          dignissimos consequatur dolores placeat, nisi omnis quas. Non totam in impedit?
-        </p>
-        <a class="btn" href="#some_text">LEARN MORE..</a>
-      </div>
-    </article>
-  </aside>
-
-  <footer>
-    <div class="text-cont rightcopy">
-      <p>Copyright 2020, Epam systems</p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-    </div>
-    <div class="text-cont">
-      <span>Design and coding<br>by Nazar Shynkarenko</span>
-    </div>
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
