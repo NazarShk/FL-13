@@ -12,5 +12,5 @@ if (checknumber < 0 || tipPercentage < 0) {
         Check number:  ${checknumber}
         Tip:  ${tipPercentage}%
         Tip amount:   ${totalSum}
-        Total sum to pay:  ${sumToPay}`)
+        Total sum to pay:  ${sumToPay}`);
 }
