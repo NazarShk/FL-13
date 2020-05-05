@@ -58,15 +58,11 @@ function makeListFromRange(range) {
 
 makeListFromRange();
 
-const actors = [{
-    name: 'tommy',
-    age: 36
-},
-{
-    name: 'lee',
-    age: 28
-}
-];
+const fruits = [
+    { name: 'apple', weight: 0.5 },
+    { name: 'pineapple', weight:2 }
+    ];
+    
 
 function getArrayOfKeys(arr, key) {
     let newArray = [];
@@ -92,16 +88,6 @@ function substitute(arr) {
 }
 
 substitute();
-
-function getPastDay(currentDate, days) {
-    let date = new Date(currentDate);
-    let pastDate = new Date(date);
-
-    pastDate.setDate(date.getDate() - days);
-    return pastDate.getDate();
-}
-
-getPastDay();
 
 function formatDate(time) {
     const TEN = 10;
