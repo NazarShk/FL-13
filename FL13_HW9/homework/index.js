@@ -1,13 +1,13 @@
 function convert() {
-    let res = [];
+    let newArray = [];
     for (let i = 0; i < arguments.length; i++) {
         if (typeof arguments[i] === 'string') {
-            res.push(parseInt(arguments[i]));
+            newArray.push(parseInt(arguments[i]));
         } else if (typeof arguments[i] === 'number') {
-            res.push('' + arguments[i]);
+            newArray.push('' + arguments[i]);
         }
     }
-    return res;
+    return newArray;
 }
 
 convert();
