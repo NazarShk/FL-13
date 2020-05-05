@@ -60,9 +60,9 @@ makeListFromRange();
 
 const fruits = [
     { name: 'apple', weight: 0.5 },
-    { name: 'pineapple', weight:2 }
-    ];
-    
+    { name: 'pineapple', weight: 2 }
+];
+
 
 function getArrayOfKeys(arr, key) {
     let newArray = [];
@@ -76,9 +76,10 @@ getArrayOfKeys();
 
 function substitute(arr) {
     let newArray = [];
-    const THRT = 30;
+    const TWEN = 20;
+    const TEN = 10;
     mapArray(arr, function (el) {
-        if (el < THRT) {
+        if (el < TWEN || el > TEN) {
             newArray.push('*');
         } else {
             newArray.push(el);
@@ -88,6 +89,16 @@ function substitute(arr) {
 }
 
 substitute();
+
+function getPastDay(currentDate, days) {
+    let date = new Date(currentDate);
+    let pastDate = new Date(date);
+
+    pastDate.setDate(date.getDate() - days);
+    return pastDate.getDate();
+}
+
+getPastDay();
 
 function formatDate(time) {
     const TEN = 10;
