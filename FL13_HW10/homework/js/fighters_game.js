@@ -2,8 +2,8 @@ class Fighter {
   constructor(propertiesObject) {
     let name = propertiesObject.name,
       damage = propertiesObject.damage,
-      health = propertiesObject.hp,
-      totalHealth = propertiesObject.hp,
+      health = propertiesObject.health,
+      totalHealth = propertiesObject.health,
       strength = propertiesObject.strength,
       agility = propertiesObject.agility,
       win = 0,
